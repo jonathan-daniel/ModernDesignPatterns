@@ -21,6 +21,7 @@ public:
 			cout << "Sort algorithm not set." << endl;
 	}
 
+	// Use the clone pattern to prevent slicing of derived object. 
 	Container(const Container& other) : algo(other.algo->clone()) {}
 
 	Container& operator=(const Container& other)
@@ -37,6 +38,6 @@ public:
 
 	void setAlgo(unique_ptr<SortAlgorithm> algo) 
 	{
-		this->algo.swap(algo);
+		this->algo = move(algo);
 	}
 };
