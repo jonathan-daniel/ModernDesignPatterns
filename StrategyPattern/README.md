@@ -11,4 +11,4 @@ Container(const Container& other) : algo(other.algo->clone()) {}
 ```
 ## UML
 
-![alternative text](http://www.plantuml.com/plantuml/proxy?src=https://raw.github.com/jonathan-daniel/ModernDesignPatterns/master/src/StrategyPattern/doc/strategy_diagram.txt&fmt=svg)
+![alternative text](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/jonathan-daniel/ModernDesignPatterns/master/StrategyPattern/doc/strategy_diagram.txt&fmt=svg)
