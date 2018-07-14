@@ -1,4 +1,4 @@
-# Strategy design pattern
+# Strategy & Prototype Design Pattern
 
 With the strategy design pattern a class (in this case `Container`)contains an unique pointer to another object which provides a certain functionality (in this case `SortAlgorithm`), which can dynamically be changed and is easy to extend with new functionalities/algorithms (following the SOLID principles). 
 

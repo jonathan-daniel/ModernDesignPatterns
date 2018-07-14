@@ -1,6 +1,6 @@
 # Modern Design Patterns
 
-This repository contains the most common design patterns written in modern C++. I made this as an exercise but it might be useful for other students.
+This repository contains the most common design patterns written in modern C++.
 
 Every subfolder contains another README.md with detailed explanation.
 
@@ -8,11 +8,11 @@ Every subfolder contains another README.md with detailed explanation.
 
 The patterns in this repo are:
 
-- [x] [Strategy Pattern](StrategyPattern/)
+- [x] [Strategy & Prototype Pattern](StrategyPattern/)
 - [x] [Observer Pattern](ObserverPattern/)
 - [ ] Factory Pattern
 - [ ] Abstract Factory Pattern
-- [ ] [Singleton Pattern](SingletonPattern/)
+- [x] [Singleton Pattern](SingletonPattern/)
 - [ ] Builder Pattern
 - [ ] Decorator Pattern
 - [ ] Adapter pattern
@@ -29,3 +29,7 @@ $ make
 ```
 
 `cmake` is required for this.
+
+## Contributing
+
+If there are any better alternatives or bugs I would like to hear it.

@@ -2,6 +2,6 @@
 class Singleton {
 	- Singleton singleton
 	- Singleton()
-	+ Singleton getInstance()
+	+ {static} Singleton getInstance()
 }
 @enduml

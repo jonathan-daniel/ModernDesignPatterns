@@ -6,6 +6,7 @@ set(PATTERNS
     StrategyPattern
     ObserverPattern
     SingletonPattern
+    FactoryPattern
 )
 
 macro(add_pattern PATTERN)
@@ -15,6 +16,6 @@ macro(add_pattern PATTERN)
 endmacro(add_pattern)
 
 foreach(PATTERN IN LISTS PATTERNS)
-    message(STATUS "Found Pattern: ${PATTERN}")
+    message(STATUS "Compiling Pattern: ${PATTERN}")
     add_pattern(${PATTERN})
 endforeach(PATTERN)

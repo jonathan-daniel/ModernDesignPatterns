@@ -1,9 +1,7 @@
 #include "Singleton.hpp"
 
-#include <iostream>
-
 int main()
 {
-	Singleton singleton;
+	Singleton::getInstance().print();
 	return 0;
 }

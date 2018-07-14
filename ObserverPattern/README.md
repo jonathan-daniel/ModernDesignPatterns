@@ -1,4 +1,4 @@
-# Observer design pattern
+# Observer Design Pattern
 
 The observer pattern allows objects to listen for state changes in a certain `Subject`.
 
