@@ -8,20 +8,15 @@ Every subfolder contains another README.md with detailed explanation.
 
 The patterns in this repo are:
 
-+ Strategy pattern
-+ Observer pattern
-+ Factory pattern
-+ Abstract factory pattern
-+ Singleton pattern
-+ Builder pattern
-+ Prototype pattern
-+ Decorator pattern
-+ Adapter pattern
-+ Facade pattern
-+ Bride pattern
-+ Template method pattern
-+ Iterator pattern
-+ Composite pattern
+- [x] Strategy Pattern
+- [x] Observer Pattern
+- [ ] Factory Pattern
+- [ ] Abstract Factory Pattern
+- [ ] Singleton Pattern
+- [ ] Builder Pattern
+- [ ] Decorator Pattern
+- [ ] Adapter pattern
+- [ ] Iterator pattern
 
 ## Building
 
