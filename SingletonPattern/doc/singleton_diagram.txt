@@ -1,0 +1,7 @@
+@startuml
+class Singleton {
+	- Singleton singleton
+	- Singleton()
+	+ Singleton getInstance()
+}
+@enduml

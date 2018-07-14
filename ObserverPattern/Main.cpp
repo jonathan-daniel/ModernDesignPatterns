@@ -25,5 +25,6 @@ int main()
 	State state = someSubject.getState();
 	state.data = 1337;
 	someSubject.setState(state);
+
 	return 0;
 }

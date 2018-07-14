@@ -5,6 +5,7 @@ project (ModernDesignPatterns)
 set(PATTERNS
     StrategyPattern
     ObserverPattern
+    SingletonPattern
 )
 
 macro(add_pattern PATTERN)
