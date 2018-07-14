@@ -1,7 +1,3 @@
-/**
- * Strategy design pattern example in modern C++.
- */
-
 #pragma once
 
 #include <iostream>

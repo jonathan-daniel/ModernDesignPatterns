@@ -1,0 +1,29 @@
+@startuml
+class Container {
+	- std::unique_ptr<SortAlgorithm> algo
+	+ Container(std::unique_ptr<SortAlgorithm> algo)
+	+ void sort()
+	+ void setAlgo(std::unique_ptr<SortAlgorithm> algo)
+}
+
+abstract class SortAlgorithm {
+	+ {abstract} void Sort()
+	+ std::unique_ptr<SortAlgorithm> clone()
+	# {abstract} SortAlgorithm* clone_derived()
+}
+
+Container *-- SortAlgorithm
+
+class QuickSort {
+	+ void sort()
+	# QuickSort* clone_derived()
+}
+
+class MergeSort {
+	+ void sort()
+	# MergeSort* clone_derived()
+}
+
+SortAlgorithm <|-- QuickSort
+SortAlgorithm <|-- MergeSort
+@enduml
