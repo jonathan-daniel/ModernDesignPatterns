@@ -1,0 +1,11 @@
+@startuml
+class Subject<StateType> {
+	- std::list<std::function<void(const StateType&)>> observers
+	- StateType state
+	- void notifyObservers()
+	+ Subject()
+	+ void setState(const StateType& state)
+	+ StateType getState()
+	+ void attach(std::function<void(const StateType&)>)
+}
+@enduml

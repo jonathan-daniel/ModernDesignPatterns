@@ -2,6 +2,8 @@
 
 This repository contains the most common design patterns written in modern C++. I made this as an exercise but it might be useful for other students.
 
+Every subfolder contains another README.md with detailed explanation.
+
 ## Patterns
 
 The patterns in this repo are:
@@ -30,3 +32,5 @@ $ mkdir build && cd build/
 $ cmake ../
 $ make
 ```
+
+`cmake` is required for this.

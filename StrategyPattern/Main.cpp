@@ -8,7 +8,7 @@ using namespace std;
 
 int main() 
 {
-	Container someContainer = Container(make_unique<QuickSort>());
+	Container someContainer(make_unique<QuickSort>());
 	someContainer.sort();
 	someContainer.setAlgo(make_unique<MergeSort>());
 	someContainer.sort();
@@ -18,7 +18,7 @@ int main()
 	secondContainer.sort();
 	someContainer.sort();
 
-	Container thirdContainer = Container(make_unique<QuickSort>());
+	Container thirdContainer(make_unique<QuickSort>());
 	thirdContainer = secondContainer;
 	thirdContainer.setAlgo(make_unique<QuickSort>());
 	thirdContainer.sort();
