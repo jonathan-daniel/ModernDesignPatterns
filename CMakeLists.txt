@@ -3,7 +3,7 @@ set (CMAKE_CXX_STANDARD 17)
 project (ModernDesignPatterns)
 
 set(PATTERNS
-    StrategyPattern
+    StrategyPrototypePattern
     ObserverPattern
     SingletonPattern
     FactoryPattern

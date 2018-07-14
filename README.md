@@ -8,9 +8,9 @@ Every subfolder contains another README.md with detailed explanation.
 
 The patterns in this repo are:
 
-- [x] [Strategy & Prototype Pattern](StrategyPattern/)
+- [x] [Strategy & Prototype Pattern](StrategyPrototypePattern/)
 - [x] [Observer Pattern](ObserverPattern/)
-- [ ] Factory Pattern
+- [x] [Factory Pattern](FactoryPattern/)
 - [ ] Abstract Factory Pattern
 - [x] [Singleton Pattern](SingletonPattern/)
 - [ ] Builder Pattern
