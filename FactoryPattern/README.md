@@ -6,6 +6,30 @@ The template parameter `template<typename DerivedType>` at the `Factory::get` me
 
 Right now it is used to call the copy constructor of the derived object to make the Factory class completely decoupled from the objects.
 
+## Example 
+
+```C++
+#include <iostream>
+
+#include "Factory.hpp"
+#include "Animals.hpp"
+
+using namespace std;
+
+int main()
+{
+	Factory<Animal> animalFactory;
+	
+	// Associate "dog_extra" with Dog(bool) constructor
+	animalFactory.registerObject<Dog>("dog_extra", true);
+
+	auto dog = animalFactory.get<Dog>("dog_extra");
+	dog->doSomething();
+	cout << dog->getExtraInt() << endl;
+
+	return 0;
+}
+```
 ## UML
 
 ![alternative text](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/jonathan-daniel/ModernDesignPatterns/master/FactoryPattern/doc/factory_diagram.txt&fmt=png)
