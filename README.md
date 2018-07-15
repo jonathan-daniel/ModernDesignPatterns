@@ -1,6 +1,6 @@
 # Modern Design Patterns
 
-This repository contains the most common design patterns written in modern C++.
+This repository contains common design pattern samples written in modern C++. This is intended for learning purposes and a starting point for implementing a pattern in your system.
 
 Every subfolder contains another README.md with detailed explanation.
 
@@ -28,7 +28,7 @@ $ cmake ../
 $ make
 ```
 
-`cmake` is required for this.
+`cmake` and C++17 is required for this.
 
 ## Contributing
 
