@@ -1,4 +1,4 @@
-# Modern Design Patterns
+# Design Patterns in Modern C++
 
 This repository contains common design pattern samples written in modern C++. This is intended for learning purposes and a starting point for implementing a pattern in your system.
 
