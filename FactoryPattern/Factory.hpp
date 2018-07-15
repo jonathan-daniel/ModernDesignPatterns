@@ -33,10 +33,11 @@ public:
 	}
 
 	template<typename DerivedType>
-	shared_ptr<DerivedType> create(const string& name)
+	shared_ptr<DerivedType> get(const string& name)
 	{
 		shared_ptr<DerivedType> ret = dynamic_pointer_cast<DerivedType>(
-			objectmap.at(name));
+			objectmap.at(name)
+		);
 
 		// Calls the copy constructor of the object.
 		shared_ptr<DerivedType> backup = make_shared<DerivedType>(*ret);

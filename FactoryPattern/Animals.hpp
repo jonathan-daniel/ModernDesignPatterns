@@ -19,10 +19,11 @@ public:
 class Dog : public Animal {
 private:
 	int dogInt;
+	int dogIntExtra;
 public:
 	Dog() : Animal(10), dogInt(10) {}
 
-	Dog(bool extraprint) : Animal(10), dogInt(10)
+	Dog(bool extraprint) : Animal(10), dogInt(10), dogIntExtra(999)
 	{
 		if(extraprint)
 			cout << "Dog stuff with extra stuff" << endl;
@@ -31,6 +32,11 @@ public:
 	void doSomething() override
 	{
 		cout << "dog stuff" << endl;
+	}
+
+	int getExtraInt()
+	{
+		return dogIntExtra;
 	}
 };
 

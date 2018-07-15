@@ -1,5 +1,8 @@
 @startuml
-class Factory {
-	
+class Factory<BaseType> {
+	- std::map<std::string, std::shared_ptr<BaseType>> objectmap
+	- std::shared_ptr<BaseType> createDerivedObject(args...) const
+	+ void registerObject(const string& name, args...)
+	+ std::shared_ptr<DerivedType> get(const string& name)
 }
 @enduml
