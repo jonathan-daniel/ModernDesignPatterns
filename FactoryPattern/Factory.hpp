@@ -2,9 +2,6 @@
 
 #include <memory>
 #include <string>
-#include <type_traits>
-#include <typeindex>
-#include <functional>
 #include <map>
 
 using namespace std;
