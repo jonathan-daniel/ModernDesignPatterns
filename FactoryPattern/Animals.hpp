@@ -7,6 +7,7 @@ private:
 	int animalInt;
 public:
 	Animal(int animalInt) : animalInt(animalInt) {}
+	Animal() : animalInt(12) {}
 	virtual ~Animal(){} // the base class must have a virtual method.
 
 	virtual void doSomething()
@@ -18,7 +19,7 @@ public:
 class Dog : public Animal {
 private:
 	int dogInt;
-	int dogIntExtra;
+	int dogIntExtra = {-1};
 public:
 	Dog() : Animal(10), dogInt(10) {}
 

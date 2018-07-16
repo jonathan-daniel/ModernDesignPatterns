@@ -1,20 +1,35 @@
-#include <iostream>
-
-#include "Factory.hpp"
 #include "Animals.hpp"
+#include "AnimalFactory.hpp"
 
-using namespace std;
+#include <iostream>
+#include <memory>
 
 int main()
 {
-	Factory<Animal> animalFactory;
-	
-	// Associate "dog_extra" with Dog(bool) constructor
-	animalFactory.registerObject<Dog>("dog_extra", true);
+	// Create factories
+	auto duckFactory = animalfactory::animalFactory("duck");
+	auto animalFactory = animalfactory::animalFactory();
+	auto specialDogFactory = animalfactory::animalFactory("special_dog");
+	auto mediumFarmFactory = animalfactory::farmFactory(20);
 
-	auto dog = animalFactory.get<Dog>("dog_extra");
-	dog->doSomething();
-	cout << dog->getExtraInt() << endl;
+	// Create one duck
+	auto duck = duckFactory();
+
+	// Create base animal object
+	auto someAnimal = animalFactory();
+
+	// Create and downcast special dog to access members.
+	auto specialDog = std::dynamic_pointer_cast<Dog>(
+		std::shared_ptr<Animal>(
+			specialDogFactory()
+		)
+	);
+
+	// Test downcast
+	std::cout << std::to_string(specialDog->getExtraInt()) << std::endl;
+
+	// Create a farm with 20 animals
+	auto animals = mediumFarmFactory();
 
 	return 0;
 }

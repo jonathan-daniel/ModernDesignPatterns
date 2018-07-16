@@ -1,8 +1,10 @@
 @startuml
-class Factory<BaseType> {
-	- std::map<std::string, std::shared_ptr<BaseType>> objectmap
-	- std::shared_ptr<BaseType> createDerivedObject(args...) const
-	+ void registerObject(const string& name, args...)
-	+ std::shared_ptr<DerivedType> get(const string& name)
-}
+actor You
+
+You -> AnimalFactory : Create DuckFactory
+AnimalFactory --> You : DuckFactory
+You -> DuckFactory : Create Duck
+DuckFactory -> Duck : Create Duck
+Duck --> DuckFactory : New Duck
+DuckFactory --> You : New Duck
 @enduml
