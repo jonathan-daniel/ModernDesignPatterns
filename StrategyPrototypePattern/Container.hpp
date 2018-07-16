@@ -5,20 +5,18 @@
 #include <iostream>
 #include <memory>
 
-using namespace std;
-
 class Container {
 private:
-	unique_ptr<SortAlgorithm> algo = make_unique<QuickSort>();
+	std::unique_ptr<SortAlgorithm> algo = std::make_unique<QuickSort>();
 public:
-	Container(unique_ptr<SortAlgorithm> algo) : algo(move(algo)) {}
+	Container(std::unique_ptr<SortAlgorithm> algo) : algo(move(algo)) {}
 
 	void sort() 
 	{
 		if(algo)
 			algo->sort();
 		else
-			cout << "Sort algorithm not set." << endl;
+			std::cout << "Sort algorithm not set." << std::endl;
 	}
 
 	// Use the clone pattern to prevent slicing of derived object. 
@@ -27,7 +25,7 @@ public:
 	Container& operator=(const Container& other)
 	{
 		Container tmp(other); // Re-use copy-constructor.
-		*this = move(tmp);
+		*this = std::move(tmp);
 		return *this;
 	}
 
@@ -36,7 +34,7 @@ public:
 	Container(Container&& other) = default;
 	Container& operator=(Container&& other) = default;
 
-	void setAlgo(unique_ptr<SortAlgorithm> algo) 
+	void setAlgo(std::unique_ptr<SortAlgorithm> algo) 
 	{
 		this->algo = move(algo);
 	}

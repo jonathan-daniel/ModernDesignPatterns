@@ -1,7 +1,6 @@
 #pragma once
 
 #include <iostream>
-using namespace std;
 
 class Animal {
 private:
@@ -12,7 +11,7 @@ public:
 
 	virtual void doSomething()
 	{
-		cout << "animal stuff" << endl;
+		std::cout << "animal stuff" << std::endl;
 	}
 };
 
@@ -26,12 +25,12 @@ public:
 	Dog(bool extraprint) : Animal(10), dogInt(10), dogIntExtra(999)
 	{
 		if(extraprint)
-			cout << "Dog stuff with extra stuff" << endl;
+			std::cout << "Dog stuff with extra stuff" << std::endl;
 	}
 
 	void doSomething() override
 	{
-		cout << "dog stuff" << endl;
+		std::cout << "dog stuff" << std::endl;
 	}
 
 	int getExtraInt()
@@ -48,6 +47,6 @@ public:
 
 	void doSomething() override
 	{
-		cout << "duck stuff" << endl;
+		std::cout << "duck stuff" << std::endl;
 	}
 };

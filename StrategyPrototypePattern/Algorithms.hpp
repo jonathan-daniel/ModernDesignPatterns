@@ -5,8 +5,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 class SortAlgorithm {
 public:
 	virtual void sort() = 0;
@@ -14,7 +12,7 @@ public:
 	
 	auto clone() const
 	{
-		return unique_ptr<SortAlgorithm>(clone_derived()) ;
+		return std::unique_ptr<SortAlgorithm>(clone_derived()) ;
 	}
 protected:
 	virtual SortAlgorithm* clone_derived() const = 0;
@@ -22,7 +20,7 @@ protected:
 
 class QuickSort : public SortAlgorithm {
 public:
-	void sort() override { cout << "QuickSort" << endl; }
+	void sort() override { std::cout << "QuickSort" << std::endl; }
 protected:
 	virtual QuickSort* clone_derived() const override 
 	{
@@ -32,7 +30,7 @@ protected:
 
 class MergeSort : public SortAlgorithm {
 public:
-	void sort() override { cout << "MergeSort" << endl; }
+	void sort() override { std::cout << "MergeSort" << std::endl; }
 protected:
 	virtual MergeSort* clone_derived() const override 
 	{

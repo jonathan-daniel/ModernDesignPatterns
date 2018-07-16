@@ -4,12 +4,10 @@
 #include <utility>
 #include <functional>
 
-using namespace std;
-
 template <typename StateType>
 class Subject {
 private:
-	list<function<void(const StateType&)>> observers = {};
+	std::list<std::function<void(const StateType&)>> observers = {};
 	StateType state;
 
 	void notifyObservers() const
@@ -28,8 +26,8 @@ public:
 	StateType getState() { return state; }
 
 	template <typename Observer>
-	void attach(Observer&& observer)
+	void attach(Observer observer)
 	{
-		observers.push_back(forward<Observer>(observer));
+		observers.push_back(std::forward<Observer>(observer));
 	}
 };
