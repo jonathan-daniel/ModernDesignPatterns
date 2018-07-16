@@ -6,6 +6,7 @@ class Subject<StateType> {
 	+ Subject()
 	+ void setState(const StateType& state)
 	+ StateType getState()
-	+ void attach(std::function<void(const StateType&)>)
+	+ void attach(std::function<void(const StateType&)>, const std::string& key)
+	+ void detach(const std::string& key)
 }
 @enduml
