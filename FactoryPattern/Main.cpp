@@ -6,19 +6,18 @@
 
 int main()
 {
-	// Create factories
-	auto duckFactory = animalfactory::animalFactory("duck");
+	// Create factories to use later
 	auto animalFactory = animalfactory::animalFactory();
 	auto specialDogFactory = animalfactory::animalFactory("special_dog");
 	auto mediumFarmFactory = animalfactory::farmFactory(20);
 
-	// Create one duck
-	auto duck = duckFactory();
+	// Create one duck now
+	auto duck = animalfactory::animalFactory("duck")();
 
 	// Create base animal object
 	auto someAnimal = animalFactory();
 
-	// Create and downcast special dog to access members.
+	// Create and downcast special dog to access derived members.
 	auto specialDog = std::dynamic_pointer_cast<Dog>(
 		std::shared_ptr<Animal>(
 			specialDogFactory()
@@ -30,6 +29,8 @@ int main()
 
 	// Create a farm with 20 animals
 	auto animals = mediumFarmFactory();
+
+	animals[0].doSomething();
 
 	return 0;
 }

@@ -9,11 +9,24 @@
 namespace animalfactory
 {
 
+/**
+ * This is using declaration for an AnimalFactory which is infact a Factory
+ * that must return a std::unique_ptr<Animal>.
+ */
 using AnimalFactory = factory::Factory<std::unique_ptr<Animal>>;
 
-// This function returns a std::function that generates an object based on the tag.
-// the returned function can be executed with the () operator.
-// The tag can be replaced with any parameter as seen in farmFactory.
+
+/**
+ * @brief      This functions returns an AnimalFactory which can be used to
+ *  generate a std::unique_ptr<Animal> as defined for AnimalFactory.
+ *  What derived (or base) object the returned factory makes depends on
+ *  the given _tag_.
+ *
+ * @param[in]  tag   The tag that defines what object the returned 
+ * AnimalFactory makes.
+ *
+ * @return     returns a callable that generates an object.
+ */
 AnimalFactory animalFactory(const std::string& tag = {})
 {
 	return [=]
@@ -29,6 +42,9 @@ AnimalFactory animalFactory(const std::string& tag = {})
 	};
 }
 
+/**
+ * This factory type must return a vector of Animal objects.
+ */
 using FarmFactory = factory::Factory<std::vector<Animal>>;
 
 FarmFactory farmFactory(int animalcount)
