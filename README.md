@@ -1,12 +1,18 @@
-# Design Patterns in Modern C++
+# Modern Design Patterns
 
-This repository contains common design pattern samples written in modern C++. This is intended for learning purposes and a starting point for implementing a pattern in your system.
+## Design Patterns In Modern C++
 
-Every subfolder contains another README.md with detailed explanation.
+[![Build Status](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns.svg?branch=master)](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains samples of common design patterns written in modern C++. 
+
+This is intended for learning purposes of new C++ features and a starting point for implementing a pattern in your system.
+
+Every subfolder contains another *README.md* with detailed explanation.
 
 ## Patterns
 
-The patterns in this repo are:
+The patterns included in this repo are:
 
 - [x] [Strategy & Prototype Pattern](StrategyPrototypePattern/)
 - [x] [Observer Pattern](ObserverPattern/)
@@ -28,7 +34,7 @@ $ cmake ../
 $ make
 ```
 
-`cmake` and C++17 is required for this.
+`cmake` and a GCC version that supports C++17 are required for this.
 
 ## Contributing
 
