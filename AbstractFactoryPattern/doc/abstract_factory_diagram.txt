@@ -1,0 +1,12 @@
+@startuml
+actor You
+
+You -> AbstractFactory : factoryProducer(shape)
+AbstractFactory --> You : shapeFactoryProducer
+You -> ShapeFactory : shapeFactoryProducer(rectangle)
+ShapeFactory --> You : RectangleFactory
+You -> RectangleFactory : RectangleFactory operator()
+RectangleFactory -> Rectangle : Create Rectangle
+Rectangle --> RectangleFactory : New Rectangle
+RectangleFactory --> You : New Rectangle
+@enduml

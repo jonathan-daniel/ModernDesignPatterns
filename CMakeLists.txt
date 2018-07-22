@@ -7,6 +7,7 @@ set(PATTERNS
     ObserverPattern
     SingletonPattern
     FactoryPattern
+    AbstractFactoryPattern
 )
 
 macro(add_pattern PATTERN)

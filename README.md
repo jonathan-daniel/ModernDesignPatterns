@@ -17,7 +17,7 @@ The patterns included in this repo are:
 - [x] [Strategy & Prototype Pattern](StrategyPrototypePattern/)
 - [x] [Observer Pattern](ObserverPattern/)
 - [x] [Factory Pattern](FactoryPattern/)
-- [ ] Abstract Factory Pattern
+- [x] [Abstract Factory Pattern](AbstractFactoryPattern/)
 - [x] [Singleton Pattern](SingletonPattern/)
 - [ ] Builder Pattern
 - [ ] Decorator Pattern
