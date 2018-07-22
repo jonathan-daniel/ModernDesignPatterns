@@ -1,6 +1,12 @@
-# Design Patterns in Modern C++
+<p align="center">
+<h1>ModernDesignPatterns </h1>
 
-This repository contains common design pattern samples written in modern C++. This is intended for learning purposes and a starting point for implementing a pattern in your system.
+<h2>Design Patterns In Modern C++ </h2>
+</p>
+
+[![Build Status](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns.svg?branch=master)](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns)
+
+This repository contains common design pattern samples written in modern C++. This is intended for learning purposes of new C++ features and a starting point for implementing a pattern in your system.
 
 Every subfolder contains another README.md with detailed explanation.
 
@@ -28,7 +34,7 @@ $ cmake ../
 $ make
 ```
 
-`cmake` and C++17 is required for this.
+`cmake` and a GCC version that supports C++17 are required for this.
 
 ## Contributing
 
