@@ -35,4 +35,4 @@ auto animals = mediumFarmFactory(); // Call the target of the std::function
 ```
 ## Sequence Diagram
 
-![alternative text](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/jonathan-daniel/ModernDesignPatterns/factory/FactoryPattern/doc/factory_diagram.txt&fmt=svg)
+![alternative text](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/jonathan-daniel/ModernDesignPatterns/master/FactoryPattern/doc/factory_diagram.txt&fmt=svg)
