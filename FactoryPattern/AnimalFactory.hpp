@@ -47,7 +47,7 @@ AnimalFactory animalFactory(const std::string& tag = {})
  */
 using FarmFactory = factory::Factory<std::vector<Animal>>;
 
-FarmFactory farmFactory(int animalcount)
+FarmFactory farmFactory(std::size_t animalcount)
 {
 	return [=]
 	{

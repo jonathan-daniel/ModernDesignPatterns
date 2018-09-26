@@ -8,8 +8,8 @@ namespace abstractfactory
 
 struct FactoryTag 
 {
-	static struct Shape{} shape;
-	static struct Color{} color;
+	struct Shape {} static constexpr shape{};
+	struct Color {} static constexpr color{};
 };
 
 template <class TFactory>
