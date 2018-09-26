@@ -1,8 +1,8 @@
 # Modern Design Patterns
 
-## Design Patterns In Modern C++
+**Common Design Patterns In Modern C++**
 
-[![Build Status](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns.svg?branch=master)](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns.svg?branch=master)](https://travis-ci.org/jonathan-daniel/ModernDesignPatterns) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 This repository contains samples of common design patterns written in modern C++. 
 
