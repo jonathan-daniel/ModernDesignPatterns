@@ -19,10 +19,6 @@ The patterns included in this repo are:
 - [x] [Factory Pattern](FactoryPattern/)
 - [x] [Abstract Factory Pattern](AbstractFactoryPattern/)
 - [x] [Singleton Pattern](SingletonPattern/)
-- [ ] Builder Pattern
-- [ ] Decorator Pattern
-- [ ] Adapter pattern
-- [ ] Iterator pattern
 
 ## Building
 
